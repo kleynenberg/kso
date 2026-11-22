@@ -1,0 +1,59 @@
+# Kleynenberg Software Ontwikkeling (KSO) — Full Technical & Consortium Dossier
+Canonical URL: https://kso.kleynenberg.com/llms-full.txt
+Mirror URL: https://steven.kleynenberg.com/kso/llms-full.txt
+Organisation: Kleynenberg Software Ontwikkeling (KSO)
+Country: The Netherlands (Delft / The Hague technology corridor)
+Organisation Type: Small and Medium-sized Enterprise (SME)
+Department: Research & Development (AI & Systems Architecture)
+Founder & Principal AI Architect: Steven Kleynenberg
+ITEA 4 Personal Profile: https://itea4.org/community/contact/profile/my.html
+ITEA 4 Organisation Profile: https://itea4.org/community/contact/profile/organisation.html
+
+================================================================================
+1. ORGANISATION OVERVIEW
+================================================================================
+Kleynenberg Software Ontwikkeling (KSO) is an independent Dutch R&D SME specializing in Artificial Intelligence, computational linguistics, parallel/browser-native compute, real-time sensor telemetry, and mission-critical systems architecture. Led by Founder & Principal AI Architect Steven Kleynenberg, KSO brings more than three decades of R&D leadership across academic research, enterprise software engineering, and European public-private innovation consortia.
+
+================================================================================
+2. CORE TECHNICAL CAPABILITIES
+================================================================================
+[CAPABILITY A] Sovereign AI & Hybrid Enterprise-RAG
+- Privacy-by-design, on-premise, zero-vendor-lock-in retrieval-augmented generation.
+- Deterministic linguistic pre-filtering (Part-of-Speech tagging, multi-word term extraction, sequence filtering) based on PCT Patent WO 2014/003543 A1 (https://patents.google.com/patent/WO2014003543A1/en) combined with dense vector search and local LLMs.
+- High precision, explainability, and auditability for patent, regulatory, clinical, and enterprise knowledge bases.
+
+[CAPABILITY B] Browser-Native AI, WebGPU & High-Performance Compute
+- Zero-footprint client-side AI inference and parallel compute kernels built on WebGPU/WGSL shaders, WebGL, and Chrome Side Panel / Native Messaging bridges.
+- Hardware-accelerated local speech synthesis/recognition and interactive visual neural network editors.
+- Direct continuation of foundational research on neural network compilers and parallel neurocomputers (MetaNet and BSP400, 1990–1991).
+
+[CAPABILITY C] Real-Time Sensor Telemetry, Edge-IoT & Decision Support (DSS)
+- Physiological and environmental telemetry ingestion from Bluetooth Low Energy (BLE) biometric sensors (Zephyr BioHarness, Polar H7), LoRaWAN/TTN gateways, and low-latency Linux DSP pipelines.
+- Integration with deterministic rule-based Clinical and Operational Decision Support Systems (DSS) and interactive 3D/4D visual analytics (https://euro-scatter.netlify.app/).
+
+[CAPABILITY D] Mission-Critical Systems & Sovereign Infrastructure
+- Systems programming on Linux (C, C++, Python, Node.js, Apache C modules, embedded microcontrollers).
+- Deterministic control loops, network resilience, strict attack-surface reduction, and automated forensic/security tooling.
+
+================================================================================
+3. EUROPEAN CONSORTIUM TRACK RECORD (ITEA & EU FP5)
+================================================================================
+- PARTNER (ITEA 3 16017): Award-winning European consortium on integrated clinical decision support and patient-centered care pathways.
+- Medolution (ITEA 3 14003): Connected clinical telemetry and medical resolution architectures.
+- MEDUSA (ITEA 2 10004): Medical Distributed Utilization of Services & Applications for acute stroke emergency workflows (peer-reviewed paper at ESOCC 2015).
+- EDAFMIS (ITEA 2 07011): Enterprise Data & Federated Management Information Systems.
+- LORE (EU FP5 IST-1999-12645): Linguistic retrieval and enterprise knowledge management.
+
+================================================================================
+4. ITEA 4 COLLABORATION AMBITION
+================================================================================
+KSO seeks consortium partnerships with European industrial enterprises, university medical centers, and research institutes in ITEA 4 calls focusing on:
+1. Sovereign & Trustworthy AI
+2. Edge & Browser-Native Intelligence
+3. Hybrid RAG for Knowledge-Intensive Domains
+4. Human-in-the-Loop Clinical & Operational Decision Support
+
+Offered Contributions:
+- End-to-end System & AI Reference Architecture Design
+- Technical Work-Package Leadership
+- Rapid Working Software Demonstrator & Prototype Engineering

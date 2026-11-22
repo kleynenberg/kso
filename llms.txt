@@ -1,0 +1,31 @@
+# Kleynenberg Software Ontwikkeling (KSO) — ITEA 4 SME Profile
+> Canonical URL: https://kso.kleynenberg.com/
+> Mirror URL: https://steven.kleynenberg.com/kso/
+> Organisation Type: Small and Medium-sized Enterprise (SME), The Netherlands
+> Location: Delft / The Hague technology corridor, South Holland, The Netherlands
+> Founder & Principal AI Architect: Steven Kleynenberg (https://steven.kleynenberg.com/)
+> ITEA 4 Community Profile: https://itea4.org/community/contact/profile/my.html
+
+## Executive Summary
+Kleynenberg Software Ontwikkeling (KSO) is a Dutch R&D SME with over 30 years of hands-on experience in Artificial Intelligence, massively parallel computing, Natural Language Processing (NLP), and distributed enterprise and clinical architectures.
+
+## Four Core R&D Pillars
+1. Sovereign AI & Hybrid Enterprise-RAG: Privacy-by-design, on-premise AI retrieval pipelines combining deterministic Part-of-Speech linguistic pre-filtering (PCT Patent WO 2014/003543 A1: https://patents.google.com/patent/WO2014003543A1/en) with dense vector search and local LLMs.
+2. Browser-Native AI, WebGPU & High-Performance Compute: Client-side, zero-footprint AI inference kernels using WebGPU/WGSL shaders, WebGL, and browser extensions, continuing a research lineage from MetaNet and BSP400 neurocomputers.
+3. Real-Time Sensor Telemetry, Edge-IoT & Decision Support (DSS): End-to-end biometric (Zephyr BioHarness, Polar H7) and environmental (LoRaWAN/TTN) telemetry pipelines coupled with rule-based DSS and multidimensional analytics (https://euro-scatter.netlify.app/).
+4. Mission-Critical Systems & Sovereign Infrastructure: Linux systems engineering (C/C++, Python, Node.js, embedded architectures), deterministic control models, and forensic/security infrastructure.
+
+## European Consortium Track Record
+- PARTNER (ITEA 3 16017) — Award-winning clinical decision support project
+- Medolution (ITEA 3 14003) — Connected clinical telemetry & medical resolution
+- MEDUSA (ITEA 2 10004) — Acute stroke workflow architecture (ESOCC 2015)
+- EDAFMIS (ITEA 2 07011) — Federated management information systems
+- LORE (EU FP5 IST-1999-12645) — Linguistic retrieval & knowledge management
+
+## ITEA 4 Consortium Roles
+Architecture design, work-package leadership, and rapid software demonstrator development for European industrial partners, hospitals, and research institutes.
+
+## Related Documents
+- Full KSO Technical Dossier: https://kso.kleynenberg.com/llms-full.txt
+- Academic & Patent Archive: https://steven.kleynenberg.com/papers/
+- Root Knowledge Index: https://steven.kleynenberg.com/llms.txt

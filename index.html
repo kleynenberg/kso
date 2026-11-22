@@ -1,0 +1,358 @@
+<!-- ============================================================================ -->
+<!-- INTEGRITY HEADER - GEMINI AI                                                 -->
+<!-- File: kso/index.html                                                         -->
+<!-- Application: Kleynenberg Software Ontwikkeling (KSO) — ITEA 4 SME Profile    -->
+<!-- ============================================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleynenberg Software Ontwikkeling (KSO) — AI &amp; Systems Architecture | ITEA 4 SME</title>
+    <meta name="description" content="Kleynenberg Software Ontwikkeling (KSO) is a Dutch R&D SME in Delft specializing in Sovereign AI, Hybrid Enterprise-RAG, Browser-Native WebGPU Compute, Real-Time Sensor Telemetry, and Mission-Critical Systems for ITEA 4 consortia.">
+    <link rel="canonical" href="https://kso.kleynenberg.com/">
+    <link rel="alternate" type="text/plain" title="KSO LLM Summary" href="https://kso.kleynenberg.com/llms.txt">
+    <link rel="alternate" type="text/plain" title="KSO LLM Full Profile" href="https://kso.kleynenberg.com/llms-full.txt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ResearchOrganization",
+      "@id": "https://kso.kleynenberg.com/#organization",
+      "name": "Kleynenberg Software Ontwikkeling",
+      "alternateName": "KSO",
+      "url": "https://kso.kleynenberg.com/",
+      "logo": "https://kso.kleynenberg.com/KSO_logo.png",
+      "description": "Dutch R&D SME led by Founder & Principal AI Architect Steven Kleynenberg, specializing in Sovereign AI, Hybrid Enterprise-RAG, Browser-Native WebGPU Compute, Real-Time Telemetry, and Clinical/Operational Decision Support for European ITEA 4 innovation consortia.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Delft",
+        "addressRegion": "South Holland",
+        "addressCountry": "NL"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Steven Kleynenberg",
+        "jobTitle": "Founder & Principal AI Architect",
+        "url": "https://steven.kleynenberg.com/",
+        "sameAs": "https://itea4.org/community/contact/profile/my.html"
+      },
+      "knowsAbout": [
+        "Sovereign AI",
+        "Hybrid Enterprise-RAG",
+        "Computational Linguistics",
+        "WebGPU and Browser-Native AI",
+        "Real-Time Sensor Telemetry",
+        "Clinical Decision Support Systems",
+        "Linux Systems Engineering"
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            --bg-main: #ffffff;
+            --bg-surface: #fafafa;
+            --text-primary: #111111;
+            --text-secondary: #4a4a4a;
+            --text-muted: #767676;
+            --border-color: #e0e0e0;
+            --border-strong: #111111;
+            --accent: #0056b3;
+        }
+        html.reverse-mode {
+            --bg-main: #000000;
+            --bg-surface: #0a0a0a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #c0c0c0;
+            --text-muted: #888888;
+            --border-color: #262626;
+            --border-strong: #f5f5f5;
+            --accent: #66b2ff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: 'Atkinson Hyperlegible Next', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.65;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            padding: 3rem 1.5rem 5rem;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .top-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2.5rem;
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.78rem;
+            letter-spacing: 0.04em;
+        }
+        .nav-group { display: flex; flex-wrap: wrap; gap: 0.85rem; align-items: center; }
+        .top-bar a { color: var(--text-primary); text-decoration: none; border-bottom: 1px solid transparent; }
+        .top-bar a:hover, .top-bar a.active { border-bottom-color: var(--border-strong); font-weight: 700; }
+        .mode-btn {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.72rem;
+            padding: 0.25rem 0.6rem;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .mode-btn:hover { border-color: var(--border-strong); color: var(--text-primary); }
+        header.hero { margin-bottom: 3rem; }
+        .eyebrow {
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        .hero-header-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+        .brand-logo {
+            max-height: 64px;
+            width: auto;
+            display: block;
+            border: 1px solid var(--border-color);
+            padding: 4px;
+            background: #ffffff;
+        }
+        h1 { font-size: clamp(1.85rem, 3.8vw, 2.6rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+        .lead { font-size: 1.08rem; color: var(--text-secondary); max-width: 780px; }
+        .meta-strip {
+            display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.25rem;
+            font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.78rem; color: var(--text-muted);
+        }
+        h2.section-title {
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-primary);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-strong);
+            margin: 2.75rem 0 1.25rem;
+        }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+        article.card {
+            border: 1px solid var(--border-color);
+            background: var(--bg-surface);
+            padding: 1.4rem 1.5rem;
+        }
+        .card-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.45rem; }
+        .card-tag { font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+        article.card h3 { font-size: 1.22rem; font-weight: 700; margin-bottom: 0.45rem; }
+        article.card p { color: var(--text-secondary); font-size: 0.98rem; margin-bottom: 0.75rem; }
+        article.card ul { margin: 0.4rem 0 0.85rem 1.25rem; color: var(--text-secondary); font-size: 0.95rem; }
+        article.card li { margin-bottom: 0.3rem; }
+        .url-list {
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.78rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            margin-top: 0.65rem;
+            padding-top: 0.65rem;
+            border-top: 1px dashed var(--border-color);
+        }
+        .url-list a { color: var(--accent); text-decoration: none; word-break: break-all; }
+        .url-list a:hover { text-decoration: underline; }
+        table.manifest-table {
+            width: 100%; border-collapse: collapse; font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.8rem; margin-top: 0.75rem;
+        }
+        table.manifest-table th, table.manifest-table td {
+            text-align: left; padding: 0.65rem 0.5rem; border-bottom: 1px solid var(--border-color); vertical-align: top;
+        }
+        table.manifest-table th { color: var(--text-muted); font-weight: 700; text-transform: uppercase; font-size: 0.72rem; }
+        table.manifest-table a { color: var(--accent); text-decoration: none; word-break: break-all; }
+        table.manifest-table a:hover { text-decoration: underline; }
+        footer.colophon {
+            margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);
+            font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.76rem; color: var(--text-muted);
+            display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem;
+        }
+        footer.colophon a { color: var(--text-primary); text-decoration: none; }
+        footer.colophon a:hover { text-decoration: underline; }
+
+    </style>
+</head>
+<body>
+    <nav class="top-bar" aria-label="Primary portal navigation">
+        <div class="nav-group">
+            <a href="../index.html">steven.kleynenberg.com</a> <a href="../papers/index.html">/papers/</a> <a href="../kso/index.html" class="active">/kso/</a> <a href="../pp/index.html">/pp/</a> <a href="../kp/index.html">/kp/</a> <a href="../tkp/index.html">/tkp/</a>
+        </div>
+        <div class="nav-group">
+            <a href="./llms.txt">llms.txt</a>
+            <a href="./llms-full.txt">llms-full.txt</a>
+            <button type="button" class="mode-btn" id="theme-toggle" title="Double-tap page or click to toggle Reverse Dark Mode">Invert</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="eyebrow">ITEA 4 R&amp;D SME PROFILE // DELFT &ndash; THE HAGUE TECHNOLOGY CORRIDOR, NL</div>
+        <div class="hero-header-row">
+            <div>
+                <h1>Kleynenberg Software Ontwikkeling</h1>
+                <p class="lead">Independent Dutch R&amp;D SME led by Founder &amp; Principal AI Architect <strong>Steven Kleynenberg</strong>, bringing over 30 years of hands-on research and engineering experience in Artificial Intelligence, massively parallel computing, Natural Language Processing (NLP), and distributed enterprise and clinical architectures.</p>
+            </div>
+            <img src="./KSO_logo.png" alt="Kleynenberg Software Ontwikkeling (KSO) Logo" class="brand-logo">
+        </div>
+        <div class="meta-strip">
+            <span>ENTITY: SME (THE NETHERLANDS)</span>
+            <span>DEPARTMENT: R&amp;D (AI &amp; SYSTEMS ARCHITECTURE)</span>
+            <span>LEAD: STEVEN KLEYNENBERG</span>
+            <span>CANONICAL: https://kso.kleynenberg.com/</span>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">01 // Core AI &amp; Technical Expertise</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Pillar 01 // Deterministic NLP + Vector Retrieval</span>
+                    <span class="card-tag">WO 2014/003543 A1</span>
+                </div>
+                <h3>Sovereign AI &amp; Hybrid Enterprise-RAG</h3>
+                <p>Architecting privacy-by-design, on-premise, and zero-lock-in AI retrieval pipelines. As co-inventor of PCT patent application <strong>WO 2014/003543 A1</strong> (Part-of-Speech linguistic query generation and document clustering), KSO combines deterministic linguistic pre-filtering alongside dense vector search, semantic indexing, and local Large Language Models (LLMs) to maximize retrieval precision, domain grounding, and full auditability.</p>
+                <div class="url-list">
+                    <a href="https://patents.google.com/patent/WO2014003543A1/en">https://patents.google.com/patent/WO2014003543A1/en</a>
+                    <a href="https://steven.kleynenberg.com/papers/">https://steven.kleynenberg.com/papers/</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Pillar 02 // Client-Side Parallelism</span>
+                    <span class="card-tag">WebGPU / WGSL / MetaNet Lineage</span>
+                </div>
+                <h3>Browser-Native AI, WebGPU &amp; High-Performance Compute</h3>
+                <p>Building client-side, zero-footprint AI inference and parallel compute kernels using WebGPU/WGSL shaders, WebGL, and Chrome Extensions (including hardware-accelerated local speech synthesis/recognition and interactive visual neural network simulators). This work continues a research lineage dating back to modular neural network compilers and massively parallel neurocomputers (MetaNet, BSP400, and Connection Machine architectures).</p>
+                <div class="url-list">
+                    <a href="https://steven.kleynenberg.com/papers/">https://steven.kleynenberg.com/papers/</a>
+                    <a href="https://kso.kleynenberg.com/">https://kso.kleynenberg.com/</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Pillar 03 // Biometric &amp; Environmental Edge</span>
+                    <span class="card-tag">BLE / LoRaWAN / 4D Analytics</span>
+                </div>
+                <h3>Real-Time Sensor Telemetry, Edge-IoT &amp; Decision Support (DSS)</h3>
+                <p>Developing end-to-end physiological and environmental telemetry pipelines&mdash;integrating Bluetooth LE biometric wearables (Zephyr BioHarness, Polar H7), LoRaWAN/TTN edge nodes, and low-latency Linux signal/audio DSP&mdash;coupled with rule-based Decision Support Systems (DSS) and interactive multidimensional visual analytics.</p>
+                <div class="url-list">
+                    <a href="https://euro-scatter.netlify.app/">https://euro-scatter.netlify.app/</a>
+                    <a href="https://kso.kleynenberg.com/">https://kso.kleynenberg.com/</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Pillar 04 // Zero-Bloat Systems Engineering</span>
+                    <span class="card-tag">Linux / C / C++ / Python / Node.js</span>
+                </div>
+                <h3>Mission-Critical Systems &amp; Sovereign Infrastructure</h3>
+                <p>Deep systems engineering on Linux (C/C++, Python, Node.js, Apache modules, and bare-metal/embedded architectures), deterministic control models, strict digital compartmentalization, and automated forensic and security infrastructure without proprietary cloud dependencies.</p>
+                <div class="url-list">
+                    <a href="https://kso.kleynenberg.com/llms-full.txt">https://kso.kleynenberg.com/llms-full.txt</a>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="section-title">02 // European Public-Private Consortium Track Record</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">ITEA 2 &middot; ITEA 3 &middot; EU FP5</span>
+                    <span class="card-tag">Architecture &amp; Demonstrators</span>
+                </div>
+                <h3>Proven Architecture &amp; Work-Package Contributions</h3>
+                <p>Extensive track record in European public-private innovation consortia, having contributed reference models, distributed system architectures, and working software demonstrators across five flagship programs:</p>
+                <ul>
+                    <li><strong>PARTNER (ITEA 3 16017):</strong> Award-winning European collaborative innovation project on patient-centric clinical decision support and integrated care workflows.</li>
+                    <li><strong>Medolution (ITEA 3 14003):</strong> Next-generation medical resolution and connected clinical telemetry architectures.</li>
+                    <li><strong>MEDUSA (ITEA 2 10004):</strong> Medical Distributed Utilization of Services &amp; Applications for time-critical acute stroke workflows (published at ESOCC 2015).</li>
+                    <li><strong>EDAFMIS (ITEA 2 07011):</strong> Enterprise Data &amp; Federated Management Information Systems.</li>
+                    <li><strong>LORE (EU FP5 IST-1999-12645):</strong> Knowledge management and linguistic retrieval architectures.</li>
+                </ul>
+                <div class="url-list">
+                    <a href="https://itea4.org/community/contact/profile/my.html">https://itea4.org/community/contact/profile/my.html</a>
+                    <a href="https://itea4.org/community/contact/profile/organisation.html">https://itea4.org/community/contact/profile/organisation.html</a>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="section-title">03 // ITEA 4 Consortium Ambition &amp; Collaboration Scope</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Open for Consortium Formation</span>
+                    <span class="card-tag">ITEA 4 Calls</span>
+                </div>
+                <h3>Partnering with European Industry, Hospitals &amp; Research Institutes</h3>
+                <p>Through Kleynenberg Software Ontwikkeling (a nimble Dutch R&amp;D SME based in the Delft/The Hague technology corridor), Steven Kleynenberg actively collaborates with European industrial partners, clinical centers, and academic institutes on:</p>
+                <ul>
+                    <li><strong>Sovereign &amp; Trustworthy AI:</strong> Auditable, on-premise AI architectures compliant with European data sovereignty requirements.</li>
+                    <li><strong>Edge &amp; Browser-Native Intelligence:</strong> Zero-footprint WebGPU/WGSL inference and low-power edge sensor processing.</li>
+                    <li><strong>Hybrid RAG for Knowledge-Intensive Domains:</strong> Combining linguistic ontology/POS structures with vector embeddings for patent, legal, medical, and engineering corpora.</li>
+                    <li><strong>Human-in-the-Loop Clinical &amp; Operational Decision Support:</strong> Real-time telemetry fusion and transparent decision support interfaces.</li>
+                </ul>
+                <p><strong>Consortium Roles:</strong> System &amp; AI Architecture Design, Work-Package Leadership, and Rapid Software Demonstrator Development.</p>
+                <div class="url-list">
+                    <a href="https://kso.kleynenberg.com/">https://kso.kleynenberg.com/</a>
+                    <a href="https://steven.kleynenberg.com/">https://steven.kleynenberg.com/</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="colophon">
+        <div>&copy; mmxxvi kleynenberg publishers &mdash; <a href="https://kleynenberg.com">https://kleynenberg.com</a></div>
+        <div>
+            <a href="https://steven.kleynenberg.com/">https://steven.kleynenberg.com/</a> &middot;
+            <a href="./llms.txt">./llms.txt</a> &middot;
+            <a href="./llms-full.txt">./llms-full.txt</a>
+        </div>
+    </footer>
+    <script>
+        (function() {
+            const root = document.documentElement;
+            const btn = document.getElementById('theme-toggle');
+            if (localStorage.getItem('sk_reverse_mode') === '1') {
+                root.classList.add('reverse-mode');
+            }
+            function toggleMode() {
+                root.classList.toggle('reverse-mode');
+                localStorage.setItem('sk_reverse_mode', root.classList.contains('reverse-mode') ? '1' : '0');
+            }
+            if (btn) btn.addEventListener('click', toggleMode);
+            let lastTap = 0;
+            document.addEventListener('dblclick', function(e) {
+                if (!e.target.closest('a, button, summary')) toggleMode();
+            });
+            document.addEventListener('touchend', function(e) {
+                const now = Date.now();
+                if (now - lastTap < 300 && !e.target.closest('a, button, summary')) toggleMode();
+                lastTap = now;
+            }, { passive: true });
+        })();
+    </script>
+</body>
+</html>
