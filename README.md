@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./KSO_logo.jpg" alt="Kleynenberg Software Ontwikkeling (KSO) Logo" width="420">
+  <img src="./KSO_logo.png" alt="Kleynenberg Software Ontwikkeling (KSO) Logo" width="420">
 </p>
 
 # Kleynenberg Software Ontwikkeling (KSO) — ITEA 4 SME Profile
